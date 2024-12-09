@@ -12,7 +12,7 @@ public class Animal {
 	private Zona zona;
 	
 	public Animal() {
-		
+		Animal.totalAnimales++;
 	}
 	
 	public Animal(String nombre, int edad, String habitat, String genero) {
