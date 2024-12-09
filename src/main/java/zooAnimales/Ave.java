@@ -29,12 +29,12 @@ public class Ave extends Animal{
 	
 	public static Ave crearHalcon(String nombre, int edad, String genero) {
         halcones++;
-        return new Ave(nombre, edad, "montañas", genero, "cafe glorioso");
+        return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
     }
 	
 	public static Ave crearAguila(String nombre, int edad, String genero) {
         aguilas++;
-        return new Ave(nombre, edad, "montañas", genero, "blanco y amarillo");
+        return new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
     }
 	
 	public static void setListado(ArrayList<Ave> listado) {
