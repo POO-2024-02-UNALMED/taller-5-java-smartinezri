@@ -21,19 +21,46 @@ public class Reptil {
 	}
 	
 	public void cantidadReptiles() {
-		
+		return listado.size();
 	}
 	
-	public void movimiento() {
-		
-	}
+	@Override
+    public String movimiento() {
+        return "reptar";
+    }
 	
-	public void crearIguana() {
-		
-	}
+	public static Reptil crearIguana(String nombre, int edad, String genero) {
+        iguanas++;
+        return new Reptil(nombre, edad, "humedal", genero, "verde", 3);
+    }
 	
-	public void crearSerpiente() {
-		
-	}
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
+        serpientes++;
+        return new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
+    }
+	
+	public static void setListado(ArrayList<Reptil> listado) {
+        Reptil.listado = listado;
+    }
+	
+	public static ArrayList<Reptil> getListado() {
+        return listado;
+    }
+	
+	public void setColorEscamas(String colorEscamas) {
+        this.colorEscamas = colorEscamas;
+    }
+	
+	public String getColorEscamas() {
+        return colorEscamas;
+    }
+	
+	public void setLargoCola(int largoCola) {
+        this.largoCola = largoCola;
+    }
+	
+	public int getLargoCola() {
+        return largoCola;
+    }
 	
 }
