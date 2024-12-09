@@ -20,7 +20,7 @@ public class Reptil {
 		listado.add(this);
 	}
 	
-	public void cantidadReptiles() {
+	public int cantidadReptiles() {
 		return listado.size();
 	}
 	
