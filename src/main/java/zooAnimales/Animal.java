@@ -20,7 +20,7 @@ public class Animal {
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		Animal.totalAnimales += 1;
+		Animal.totalAnimales ++;
 	}
 	
 	public String movimiento(){
